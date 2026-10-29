@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-driven user research & ideation: Vadym Grin</title>
+<meta name="description" content="Plain questions to Amplitude through Claude, then layouts built on the answers.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@100,400;100,500;125,300&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css?v=mvst4nik">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="is-chapter">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast">
+  <div class="container">
+    <a class="mark" href="../" aria-label="Vadym Grin, home">
+      <svg viewBox="0 0 52 28" width="78" height="42" aria-hidden="true"><path fill="currentColor" d="M40.873 1.34044C41.7499 1.34054 41.9844 2.06941 41.9844 2.5377C41.9841 3.63814 39.6937 6.87916 39.6934 8.46544C39.6934 8.80146 39.8903 9.04243 40.2715 9.04259C41.5776 9.04259 43.7461 6.35788 43.9883 5.2047C43.4591 4.94798 43.3243 4.67904 43.3242 4.26134C43.3242 3.69608 43.6585 3.2047 44.415 3.2047C45.0699 3.20476 45.3887 3.54259 45.3887 3.54259C45.3937 3.54112 46.1906 3.30919 47.3838 3.30919L47.376 3.30821C49.2341 3.30822 51.3954 3.88704 51.3955 6.20079C51.3955 16.7907 12.6775 19.7809 12.6758 25.8248C12.6758 26.2805 13.3874 27.0121 14.7158 27.0123C14.7346 27.356 14.2932 28.1012 13.6357 27.9879C12.5443 27.7989 11.7979 26.836 11.7979 25.3922C11.7979 17.082 50.5303 12.3089 50.5303 6.24962C50.53 5.67047 49.9846 4.72325 47.166 4.72325C46.0119 4.72331 45.3555 4.96349 45.3555 4.96349C45.3401 5.00137 42.8996 11.0189 39.0137 11.0191C38.4127 11.0191 37.499 10.7241 37.499 9.53185C37.4992 7.32257 39.7556 4.54571 39.7559 3.67442C39.7559 3.46418 39.6745 3.34532 39.4863 3.34532C36.9632 3.34547 33.9082 8.8463 33.9082 8.8463C32.8455 10.8492 31.7872 12.526 31.377 12.526C30.8138 12.5258 30.4941 12.2045 30.4941 11.7262C30.4944 11.4665 30.8918 10.4949 31.4688 9.24278C30.0924 10.9384 28.4464 12.5435 27.1504 12.5436C25.9333 12.5436 25.5107 11.7134 25.5107 11.0084C25.5108 10.7479 25.5586 10.4309 25.6426 10.0748C24.3327 11.8323 22.51 13.6744 20.8525 13.6744C19.1955 13.6742 19.0039 12.2903 19.0039 11.5602C19.004 9.60252 21.9248 6.28282 21.9248 6.28282C21.9248 6.28282 21.5557 6.53375 20.8193 6.5338C20.4078 6.5338 19.8758 6.44994 19.4229 6.1881C18.6023 7.81081 17.0112 9.93234 14.1406 10.6022C14.8494 11.1787 15.2842 12.1406 15.2842 13.5719C15.2842 16.4649 11.8013 20.9654 5.84277 20.9654C0.845911 20.9652 9.66778e-05 16.3699 0 14.7809C0 7.8857 5.81219 2.80138 12.4746 2.80138C14.428 2.80148 16.3838 3.44804 16.3838 5.37657C16.3837 6.12679 15.6896 6.65265 15.5391 6.71056C15.4191 6.75809 15.3829 6.6423 15.4014 6.59923C15.4352 6.52001 15.4511 6.45418 15.4512 6.34239C15.4512 5.79727 14.814 4.51036 12.1553 4.51036C6.64601 4.51046 2.5957 8.98124 2.5957 14.4928C2.59588 16.7285 3.79562 19.3931 6.70996 19.3932C9.24314 19.3932 12.7889 17.2885 12.7891 13.3834C12.7891 11.0005 10.703 10.8419 9.46582 10.9576C7.71429 11.1716 7.10862 11.5951 6.83008 11.9791C6.78867 12.037 6.72374 12.0268 6.6748 11.9664C6.6135 11.8894 6.57812 11.7097 6.57812 11.5865C6.57819 10.8612 7.06425 8.65695 12.125 8.65685C16.2379 8.65685 17.9945 6.86905 18.7373 5.5006C18.5806 5.21617 18.4844 4.86004 18.4844 4.41466C18.4844 3.73987 19.0514 3.35997 19.5684 3.35997C20.085 3.36004 20.2528 3.67288 20.2529 3.90196C20.2529 4.10843 20.1934 4.192 20.1934 4.192C20.1941 4.20702 20.2302 4.78571 21.1465 4.78575C22.4835 4.78575 23.7252 3.82336 23.7422 3.81017C23.7422 3.81017 24.3075 2.41368 25.3213 2.41368C25.7338 2.41397 26.0476 2.93882 26.0479 3.37169C26.0479 4.3012 24.5014 5.15462 24.4902 5.16075C24.4902 5.16075 21.5005 8.96624 21.5 10.5729C21.5 11.055 21.7352 11.3434 22.1191 11.3434C24.1587 11.3431 27.2796 6.09247 27.293 6.06993C28.2488 4.30023 29.3619 2.80394 30.0068 2.80333C30.5514 2.80333 30.9922 3.19351 30.9922 3.67442C30.9918 4.31685 28.0547 8.20664 28.0547 9.55235C28.0547 9.79908 28.0802 10.0748 28.4365 10.0748C30.355 10.0745 33.7842 4.58458 33.7842 4.58458C34.7363 2.77713 35.569 1.34195 35.7461 1.34142C36.2416 1.34142 36.6834 1.57054 36.6836 2.35704C36.6836 2.6894 36.4073 3.49927 35.9795 4.52403C37.3521 2.93526 39.1566 1.34044 40.873 1.34044ZM31.3926 0.0425873C31.9522 -0.160041 32.9258 0.388827 32.9258 1.08751V1.08849C32.9258 1.79214 31.9824 2.68201 31.3525 2.68224C31.0552 2.68224 30.2864 2.33253 30.2861 1.84923C30.2861 1.17318 30.8568 0.236463 31.3926 0.0425873Z"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="ch-hero" aria-labelledby="title">
+    <div class="container ch-hero__grid">
+      <div class="ch-hero__text">
+        <h1 id="title" class="settle">AI-driven user research & ideation</h1>
+        <p class="lead settle">Plain questions to Amplitude through Claude, then layouts built on the answers.</p>
+        <dl class="band__meta">
+          <div><dt>Chapter</dt><dd>1 of 6</dd></div>
+          <div><dt>Work</dt><dd>Freecash at Almedia, LegacyKeeper</dd></div>
+          <div><dt>With</dt><dd>Claude, Amplitude, Voicepanel, Figma</dd></div>
+        </dl>
+      </div>
+      <figure class="ch-hero__castle">
+        <canvas class="castle castle--still" data-part="0" aria-hidden="true"></canvas>
+      </figure>
+    </div>
+  </section>
+
+<section class="ch-text" aria-labelledby="b0"><div class="container ch-split">
+  <h2 id="b0">The constraint</h2>
+  <div class="ch-prose"><p>Freecash, Almedia’s rewards app, serves 60 million users, and Amplitude holds the story of how they move. But a funnel only opens up if you know every event name and how the taxonomy is built.</p>
+    <p>For a designer that meant waiting for an analyst, or guessing.</p></div>
+</div></section>
+
+<section class="ch-statement"><div class="container">
+  <blockquote><p class="display-s">So I connected Claude to Amplitude, and the taxonomy stopped being the gate.</p></blockquote>
+</div></section>
+
+<section class="ch-demo" aria-labelledby="b2"><div class="container">
+  <h2 id="b2" class="visually-hidden">Asking Amplitude through Claude</h2>
+  <div class="demo" data-demo>
+    <div class="demo__panel demo__amp">
+      <h3 class="demo__app">Amplitude</h3>
+      <p class="demo__search">Search 412 events</p>
+      <table class="demo__events">
+        <thead><tr><th scope="col">Event</th><th scope="col">Last 30 days</th></tr></thead>
+        <tbody><tr class="is-match" data-match><td><code>acct_crt_v2</code></td><td>312K</td></tr><tr class="is-match" data-match><td><code>usr_ses_strt_v2</code></td><td>2.41M</td></tr><tr><td><code>ofr_wall_imp_v3</code></td><td>1.87M</td></tr><tr><td><code>rwd_clm_tap</code></td><td>968K</td></tr><tr><td><code>onb_stp4b_cmpl</code></td><td>274K</td></tr><tr><td><code>pn_optin_v5_ios</code></td><td>121K</td></tr><tr><td><code>cshout_req_init</code></td><td>88K</td></tr><tr><td><code>lvl_up_evt_old</code></td><td>41K</td></tr></tbody>
+      </table>
+      <figure class="demo__chart" data-step="chart">
+        <svg viewBox="0 0 640 200" role="img" aria-label="Retention curve with sample data: Day 1 42%, Day 7 26%, Day 14 21%, Day 30 18.2%">
+          <line class="demo__grid" x1="16" x2="624" y1="130.0" y2="130.0"/><line class="demo__grid" x1="16" x2="624" y1="90.0" y2="90.0"/><line class="demo__grid" x1="16" x2="624" y1="50.0" y2="50.0"/>
+          <line class="demo__axis" x1="16" y1="170" x2="624" y2="170"/>
+          <text class="demo__tick" x="16.0" y="194" text-anchor="start">Day 0</text><text class="demo__tick" x="157.9" y="194" text-anchor="middle">Day 7</text><text class="demo__tick" x="299.7" y="194" text-anchor="middle">Day 14</text><text class="demo__tick" x="624.0" y="194" text-anchor="end">Day 30</text>
+          <polygon class="demo__area" points="16,170 16.0,10.0 36.3,102.8 157.9,128.4 299.7,136.4 624.0,140.9 624,170"/>
+          <polyline class="demo__curve" pathLength="1" points="16.0,10.0 36.3,102.8 157.9,128.4 299.7,136.4 624.0,140.9"/>
+          <circle class="demo__dot" r="3.5" cx="16.0" cy="10.0" style="--at: 0.000"/><circle class="demo__dot" r="3.5" cx="36.3" cy="102.8" style="--at: 0.139"/><circle class="demo__dot" r="3.5" cx="157.9" cy="128.4" style="--at: 0.320"/><circle class="demo__dot" r="3.5" cx="299.7" cy="136.4" style="--at: 0.527"/><circle class="demo__dot" r="3.5" cx="624.0" cy="140.9" style="--at: 1.000"/>
+        </svg>
+        <figcaption><span>Retention, September sign-ups</span><b>Day 30: <span data-count="18.2">18.2</span>%</b></figcaption>
+      </figure>
+    </div>
+    <div class="demo__panel demo__claude">
+      <div class="claude__side" aria-hidden="true">
+        <ul class="claude__menu">
+          <li data-new><svg class="claude__icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg>New chat</li>
+          <li><svg class="claude__icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M7 12.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11ZM11 11l3 3"/></svg>Search</li>
+          <li><svg class="claude__icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M2.5 4.5h4l1.5 1.5h5.5v7h-11z"/></svg>Projects</li>
+          <li><svg class="claude__icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 3h6v6H3zM7 7h6v6H7z"/></svg>Artifacts</li>
+        </ul>
+        <p class="claude__group">Recents</p>
+        <ul class="claude__recents">
+          <li class="is-current" data-recent>RR Day 30</li>
+          <li>Onboarding drop-off</li>
+          <li>Offer wall funnel</li>
+        </ul>
+        <p class="claude__user"><span class="claude__avatar">V</span>Vadym</p>
+      </div>
+      <div class="claude__main">
+        <div class="claude__home" aria-hidden="true">
+          <p class="claude__hello"><svg class="claude__spark" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><line x1="12" y1="12" x2="12.0" y2="1.5"/><line x1="12" y1="12" x2="17.3" y2="6.7"/><line x1="12" y1="12" x2="22.5" y2="12.0"/><line x1="12" y1="12" x2="17.3" y2="17.3"/><line x1="12" y1="12" x2="12.0" y2="22.5"/><line x1="12" y1="12" x2="6.7" y2="17.3"/><line x1="12" y1="12" x2="1.5" y2="12.0"/><line x1="12" y1="12" x2="6.7" y2="6.7"/></svg>Afternoon, Vadym</p>
+          <div class="claude__input" aria-hidden="true">
+            <span class="claude__field" data-type data-full="What’s our RR Day 30?">How can I help you today?</span>
+            <div class="claude__bar">
+              <span class="claude__plus"><svg class="claude__icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 3.5v9M3.5 8h9"/></svg></span>
+              <span class="claude__seg"><span>Chat</span><span class="is-on">Cowork</span></span>
+              <span class="claude__model">Opus 5.5 <i>Medium</i></span>
+              <span class="claude__mic"><svg class="claude__icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 2.5a2 2 0 0 1 2 2V8a2 2 0 0 1-4 0V4.5a2 2 0 0 1 2-2ZM4.5 7.5a3.5 3.5 0 0 0 7 0M8 11v2.5"/></svg></span>
+              <span class="claude__send"><svg class="claude__icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg></span>
+            </div>
+          </div>
+        </div>
+        <div class="claude__thread">
+          <ol class="demo__chat">
+            <li class="msg msg--you" data-step="ask">What’s our RR Day 30?</li>
+            <li class="msg msg--tool" data-step="tool"><span class="tool__icon" aria-hidden="true"></span>Read the Amplitude event taxonomy</li>
+            <li class="msg msg--tool" data-step="tool" data-highlight><span class="tool__icon" aria-hidden="true"></span><span>Matched <code>acct_crt_v2</code> and <code>usr_ses_strt_v2</code></span></li>
+            <li class="msg msg--tool" data-step="tool"><span class="tool__icon" aria-hidden="true"></span>Built the retention chart</li>
+            <li class="msg msg--claude" data-step="answer"><svg class="claude__spark" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><line x1="12" y1="12" x2="12.0" y2="1.5"/><line x1="12" y1="12" x2="17.3" y2="6.7"/><line x1="12" y1="12" x2="22.5" y2="12.0"/><line x1="12" y1="12" x2="17.3" y2="17.3"/><line x1="12" y1="12" x2="12.0" y2="22.5"/><line x1="12" y1="12" x2="6.7" y2="17.3"/><line x1="12" y1="12" x2="1.5" y2="12.0"/><line x1="12" y1="12" x2="6.7" y2="6.7"/></svg><div><p>Day 30 retention is <b>18.2%</b> for September sign-ups.</p><p>The chart is open in Amplitude to check.</p></div></li>
+          </ol>
+          <div class="claude__input" aria-hidden="true">
+            <span class="claude__field" >Reply to Claude…</span>
+            <div class="claude__bar">
+              <span class="claude__plus"><svg class="claude__icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 3.5v9M3.5 8h9"/></svg></span>
+              <span class="claude__seg"><span>Chat</span><span class="is-on">Cowork</span></span>
+              <span class="claude__model">Opus 5.5 <i>Medium</i></span>
+              <span class="claude__mic"><svg class="claude__icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 2.5a2 2 0 0 1 2 2V8a2 2 0 0 1-4 0V4.5a2 2 0 0 1 2-2ZM4.5 7.5a3.5 3.5 0 0 0 7 0M8 11v2.5"/></svg></span>
+              <span class="claude__send"><svg class="claude__icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M8 13V3M3.5 7.5 8 3l4.5 4.5"/></svg></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="demo__foot"><p>Sample data, not Freecash’s numbers.</p><button class="btn btn--secondary btn--small" type="button" data-demo-replay hidden>Play again</button></div>
+</div></section>
+
+<section class="ch-rows" aria-labelledby="b3"><div class="container ch-split">
+  <h2 id="b3">The loop</h2>
+  <dl class="rows"><div><dt>Ask</dt><dd>A plain question about one flow.</dd></div><div><dt>Query</dt><dd>Claude finds the events and builds the funnel.</dd></div><div><dt>Verify</dt><dd>I check the same funnel in Amplitude.</dd></div><div><dt>Use</dt><dd>The numbers feed ideas and proposals.</dd></div></dl>
+</div></section>
+
+<section class="ch-text" aria-labelledby="b4"><div class="container ch-split">
+  <h2 id="b4">From answers to layouts</h2>
+  <div class="ch-prose"><p>For My Offers, Voicepanel answers and Customer Support notes went to Claude for analysis.</p>
+    <p>With AI agents, we brainstormed new layouts against the problems it found.</p></div>
+</div></section>
+
+<section class="ch-rail"><div class="container"><p class="ch-rail__note">Five versions reached Figma, real enough to put in front of users.</p></div>
+  <ul class="rail" tabindex="0" aria-label="Five versions of My Offers"><li><figure class="rail__shot" data-kind="product"><img src="../assets/img/my-offers-v1.jpg" width="540" height="1604" alt="My Offers, version 1" sizes="20rem" loading="lazy" decoding="async"><figcaption>V1</figcaption></figure></li><li><figure class="rail__shot" data-kind="product"><img src="../assets/img/my-offers-v2.jpg" width="540" height="2016" alt="My Offers, version 2" sizes="20rem" loading="lazy" decoding="async"><figcaption>V2</figcaption></figure></li><li><figure class="rail__shot" data-kind="product"><img src="../assets/img/my-offers-v3.jpg" width="540" height="3155" alt="My Offers, version 3" sizes="20rem" loading="lazy" decoding="async"><figcaption>V3</figcaption></figure></li><li><figure class="rail__shot" data-kind="product"><img src="../assets/img/my-offers-v4.jpg" width="540" height="1868" alt="My Offers, version 4" sizes="20rem" loading="lazy" decoding="async"><figcaption>V4</figcaption></figure></li><li><figure class="rail__shot" data-kind="product"><img src="../assets/img/my-offers-v5.jpg" width="540" height="2230" alt="My Offers, version 5" sizes="20rem" loading="lazy" decoding="async"><figcaption>V5</figcaption></figure></li></ul>
+  <div class="container ch-notes">
+  <ul class="notes" tabindex="0" aria-label="Suggestions from the My Offers board"><li class="note note--confirmed" data-reveal style="--i: 0; --tilt: -2.2deg"><div class="note__paper"><span class="note__tag">Confirmed by community</span><p class="note__title">V3 as the base direction</p><p class="note__body">Both Reddit and Discord independently landed on V3. Build from here.</p></div></li><li class="note note--confirmed" data-reveal style="--i: 1; --tilt: 1.4deg"><div class="note__paper"><span class="note__tag">Confirmed by community</span><p class="note__title">Progress bars + %, but applied selectively</p><p class="note__body">Most praised addition across both channels.</p></div></li><li class="note note--confirmed" data-reveal style="--i: 2; --tilt: -0.8deg"><div class="note__paper"><span class="note__tag">Confirmed by community</span><p class="note__title">Ability to hide / dismiss offers</p><p class="note__body">Users are stuck with irrelevant or completed offers blocking the list.</p></div></li><li class="note note--signal" data-reveal style="--i: 3; --tilt: 2deg"><div class="note__paper"><span class="note__tag">Strong signal</span><p class="note__title">Surface the next locked bonus reward</p><p class="note__body">Currently completely invisible: users are flying blind.</p></div></li><li class="note note--signal" data-reveal style="--i: 4; --tilt: -1.6deg"><div class="note__paper"><span class="note__tag">Strong signal</span><p class="note__title">Play Rewards before Burning Rewards</p><p class="note__body">Play rewards are the most frequent activity; they should lead.</p></div></li></ul>
+  
+</div>
+  
+</section>
+
+<section class="ch-lk" aria-labelledby="b6">
+  <div class="container ch-split">
+    <h2 id="b6">Breadth before depth</h2>
+    <div class="ch-prose"><p>On LegacyKeeper, a new product, the home screen started as seven directions side by side.</p><p>Seeing the range first makes the choice a decision instead of a default.</p></div>
+  </div>
+  <ul class="rail lk-rail" tabindex="0" aria-label="Seven directions for the LegacyKeeper home screen"><li><figure class="rail__shot lk-shot" data-kind="product"><img src="../assets/img/lk-a.jpg" width="600" height="1301" alt="LegacyKeeper home screen, direction A: Countdown ring" sizes="15rem" loading="lazy" decoding="async"><figcaption><b>A</b> Countdown ring</figcaption></figure></li><li><figure class="rail__shot lk-shot" data-kind="product"><img src="../assets/img/lk-b.jpg" width="600" height="1301" alt="LegacyKeeper home screen, direction B: Ledger" sizes="15rem" loading="lazy" decoding="async"><figcaption><b>B</b> Ledger</figcaption></figure></li><li><figure class="rail__shot lk-shot" data-kind="product"><img src="../assets/img/lk-c.jpg" width="600" height="1301" alt="LegacyKeeper home screen, direction C: Readiness" sizes="15rem" loading="lazy" decoding="async"><figcaption><b>C</b> Readiness</figcaption></figure></li><li><figure class="rail__shot lk-shot" data-kind="product"><img src="../assets/img/lk-d.jpg" width="600" height="1301" alt="LegacyKeeper home screen, direction D: Calm button" sizes="15rem" loading="lazy" decoding="async"><figcaption><b>D</b> Calm button</figcaption></figure></li><li><figure class="rail__shot lk-shot" data-kind="product"><img src="../assets/img/lk-e.jpg" width="600" height="1301" alt="LegacyKeeper home screen, direction E: Hero and sheet" sizes="15rem" loading="lazy" decoding="async"><figcaption><b>E</b> Hero and sheet</figcaption></figure></li><li><figure class="rail__shot lk-shot" data-kind="product"><img src="../assets/img/lk-f.jpg" width="600" height="1301" alt="LegacyKeeper home screen, direction F: Bento" sizes="15rem" loading="lazy" decoding="async"><figcaption><b>F</b> Bento</figcaption></figure></li><li><figure class="rail__shot lk-shot" data-kind="product"><img src="../assets/img/lk-g.jpg" width="600" height="1301" alt="LegacyKeeper home screen, direction G: Week of colour" sizes="15rem" loading="lazy" decoding="async"><figcaption><b>G</b> Week of colour</figcaption></figure></li></ul>
+  <div class="container lk-pick">
+    <div class="lk-pick__text">
+      <p class="lead">Direction D, the calm button, then went through six colourways.</p>
+      <div class="lk-swatches" role="radiogroup" aria-label="Colourway"><button class="lk-swatch" type="button" role="radio" aria-checked="true" data-way="0" data-caption="Direction D in Sage" style="--a: var(--lk-sage-a); --b: var(--lk-sage-b)"><span class="lk-swatch__dot" aria-hidden="true"></span>Sage</button><button class="lk-swatch" type="button" role="radio" aria-checked="false" data-way="1" data-caption="Direction D in Clay" style="--a: var(--lk-clay-a); --b: var(--lk-clay-b)"><span class="lk-swatch__dot" aria-hidden="true"></span>Clay</button><button class="lk-swatch" type="button" role="radio" aria-checked="false" data-way="2" data-caption="Direction D in Dusty rose" style="--a: var(--lk-rose-a); --b: var(--lk-rose-b)"><span class="lk-swatch__dot" aria-hidden="true"></span>Dusty rose</button><button class="lk-swatch" type="button" role="radio" aria-checked="false" data-way="3" data-caption="Direction D in Twilight" style="--a: var(--lk-twilight-a); --b: var(--lk-twilight-b)"><span class="lk-swatch__dot" aria-hidden="true"></span>Twilight</button><button class="lk-swatch" type="button" role="radio" aria-checked="false" data-way="4" data-caption="Direction D in Ocean" style="--a: var(--lk-ocean-a); --b: var(--lk-ocean-b)"><span class="lk-swatch__dot" aria-hidden="true"></span>Ocean</button><button class="lk-swatch" type="button" role="radio" aria-checked="false" data-way="5" data-caption="Direction D in Golden hour" style="--a: var(--lk-golden-a); --b: var(--lk-golden-b)"><span class="lk-swatch__dot" aria-hidden="true"></span>Golden hour</button><button class="lk-swatch" type="button" role="radio" aria-checked="false" data-way="6" data-caption="Direction D in Aurora" style="--a: var(--lk-aurora-a); --b: var(--lk-aurora-b)"><span class="lk-swatch__dot" aria-hidden="true"></span>Aurora</button><button class="lk-swatch lk-swatch--kept" type="button" role="radio" aria-checked="false" data-way="7" data-caption="Kept: Twilight, with the Ledger’s people" style="--a: var(--lk-twilight-a); --b: var(--lk-twilight-b)"><span class="lk-swatch__dot" aria-hidden="true"></span>The one we kept</button></div>
+    </div>
+    <figure class="lk-phone" data-kind="product"><div class="lk-phone__screen"><img class="is-on" src="../assets/img/lk-d.jpg" width="600" height="1301" alt="LegacyKeeper home screen, the calm button in Sage" sizes="24rem" loading="lazy" decoding="async"><img src="../assets/img/lk-d1-clay.jpg" width="600" height="1301" alt="LegacyKeeper home screen, the calm button in Clay" sizes="24rem" loading="lazy" decoding="async"><img src="../assets/img/lk-d1-rose.jpg" width="600" height="1301" alt="LegacyKeeper home screen, the calm button in Dusty rose" sizes="24rem" loading="lazy" decoding="async"><img src="../assets/img/lk-d1-twilight.jpg" width="600" height="1301" alt="LegacyKeeper home screen, the calm button in Twilight" sizes="24rem" loading="lazy" decoding="async"><img src="../assets/img/lk-d1-ocean.jpg" width="600" height="1301" alt="LegacyKeeper home screen, the calm button in Ocean" sizes="24rem" loading="lazy" decoding="async"><img src="../assets/img/lk-d1-golden.jpg" width="600" height="1301" alt="LegacyKeeper home screen, the calm button in Golden hour" sizes="24rem" loading="lazy" decoding="async"><img src="../assets/img/lk-d1-aurora.jpg" width="600" height="1301" alt="LegacyKeeper home screen, the calm button in Aurora" sizes="24rem" loading="lazy" decoding="async"><img src="../assets/img/lk-baseline.jpg" width="600" height="1301" alt="LegacyKeeper home screen as kept: the Twilight button with the Ledger’s contact list" sizes="24rem" loading="lazy" decoding="async"></div><figcaption aria-live="polite">Direction D in Sage</figcaption></figure>
+  </div>
+</section>
+
+  <nav class="ch-next" aria-label="Chapters">
+    <div class="container ch-next__grid">
+      <a class="ch-next__link" href="ux-ui.html"><span class="ch-next__label">Chapter 2</span><span class="ch-next__title">AI-driven UX/UI design</span></a>
+      <a class="btn btn--secondary" href="../#chapters">All chapters</a>
+    </div>
+  </nav>
+</main>
+
+
+<script type="module" src="../assets/site.js?v=mvst4nik"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Hallmark's render screenshots
+.hallmark/
+# local editor and preview settings
+.claude/
+# images no page uses any more, kept locally
+_unused/
+.DS_Store
