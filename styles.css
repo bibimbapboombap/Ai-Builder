@@ -16,8 +16,8 @@
 /* Hallmark · waive 39b · the ten sound keys on the sound chapter stand 168px tall · each is a tile that plays one effect from the game, not a form button */
 /* Hallmark · dismissed 49 · the sound tiles are square keys whose name, line and state stack by design; each name alone stays on one line */
 /* Hallmark · dismissed F6 · the table's row heads are tool names, not figures, so tabular figures do nothing there */
-@import url("./tokens.css?v=mvst4nik");
-@import url("./base.css?v=mvst4nik");
+@import url("./tokens.css?v=mvtjvses");
+@import url("./base.css?v=mvtjvses");
 
 /* ---------- page ---------- */
 h1, h2 { font-stretch: var(--display-stretch); line-height: 1.04; }

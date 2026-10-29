@@ -44,13 +44,13 @@ const chapters = [
     lead: 'One AI-built design system across an extension, apps and websites.',
     work: 'Atolls, Just Shapes', with: 'Figma, Claude',
     blocks: [
-      { type: 'text', h: 'One system, many surfaces', p: [
+      { type: 'text', h: 'Atolls: One system, many surfaces', p: [
         'coupons.com lived on search traffic alone, so one Google ranking change could wipe out acquisition. We answered with a browser extension and a mobile app.',
         'The design system behind them was built with AI, so we designed complex products fast across the extension, the apps and customers’ websites.',
       ] },
       { type: 'figure', src: 'coupons-extension.webp', alt: 'The coupons.com browser extension open beside a merchant’s page, offering cashback', cap: 'The coupons.com extension, on a merchant’s page.' },
       { type: 'rail', label: 'The coupons.com mobile app', note: 'The same system, on the phone.', items: [4, 5, 6, 7].map((i) => ({ src: `coupons-app-${i}.jpg`, alt: 'A screen from the coupons.com mobile app' })) },
-      { type: 'text', h: 'Designed in Figma, built by Claude', p: [
+      { type: 'text', h: 'Just Shapes: Designed in Figma, built by Claude', p: [
         'On Just Shapes, I designed the screens and the component library in Figma. Claude did the technical implementation of everything, reading exact numbers from the file through a bridge plugin.',
         'I moderated: I judged the taste and the atmosphere, and made manual tweaks when they were needed.',
       ] },

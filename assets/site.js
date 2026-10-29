@@ -1,4 +1,4 @@
-import { mountCastle } from './castle.js?v=mvst4nik';
+import { mountCastle } from './castle.js?v=mvtjvses';
 
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
